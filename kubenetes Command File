@@ -1,0 +1,331 @@
+C:\Windows\System32>minikube start
+W0916 20:07:39.062315   18436 main.go:291] Unable to resolve the current Docker CLI context "default": context "default": context not found: open C:\Users\yoges\.docker\contexts\meta\37a8eec1ce19687d132fe29051dca629d164e2c4958ba141d5f4133a33f0688f\meta.json: The system cannot find the path specified.
+* minikube v1.31.2 on Microsoft Windows 11 Home 10.0.22621.2283 Build 22621.2283
+* Using the docker driver based on existing profile
+* Starting control plane node minikube in cluster minikube
+* Pulling base image ...
+* Updating the running docker "minikube" container ...
+* Preparing Kubernetes v1.27.4 on Docker 24.0.4 ...
+* Verifying Kubernetes components...
+  - Using image gcr.io/k8s-minikube/storage-provisioner:v5
+* Enabled addons: storage-provisioner, default-storageclass
+* Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
+
+C:\Windows\System32>minikube status
+W0916 20:09:33.658572    9588 main.go:291] Unable to resolve the current Docker CLI context "default": context "default": context not found: open C:\Users\yoges\.docker\contexts\meta\37a8eec1ce19687d132fe29051dca629d164e2c4958ba141d5f4133a33f0688f\meta.json: The system cannot find the path specified.
+minikube
+type: Control Plane
+host: Running
+kubelet: Running
+apiserver: Running
+kubeconfig: Configured
+
+
+C:\Windows\System32>eval $(minikube docker-env)
+'eval' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Windows\System32>minikube docker-env
+W0916 20:12:15.685769   16820 main.go:291] Unable to resolve the current Docker CLI context "default": context "default": context not found: open C:\Users\yoges\.docker\contexts\meta\37a8eec1ce19687d132fe29051dca629d164e2c4958ba141d5f4133a33f0688f\meta.json: The system cannot find the path specified.
+SET DOCKER_TLS_VERIFY=1
+SET DOCKER_HOST=tcp://127.0.0.1:57254
+SET DOCKER_CERT_PATH=C:\Users\yoges\.minikube\certs
+SET MINIKUBE_ACTIVE_DOCKERD=minikube
+REM To point your shell to minikube's docker-daemon, run:
+REM @FOR /f "tokens=*" %i IN ('minikube -p minikube docker-env --shell cmd') DO @%i
+
+C:\Windows\System32>docker images
+REPOSITORY                            TAG                             IMAGE ID       CREATED             SIZE
+yogesh860/devops-integration          latest                          5f9f006034b4   About an hour ago   544MB
+yogesh860/devops-integration          <none>                          0f18d6dae358   About an hour ago   544MB
+yogesh860/devops-integration          <none>                          100a26fb07ee   About an hour ago   544MB
+yogesh860/devops-integration          <none>                          8b8391e60047   2 hours ago         544MB
+<none>                                <none>                          25c7fda9a373   2 hours ago         544MB
+<none>                                <none>                          ed44bb2c8993   2 hours ago         544MB
+<none>                                <none>                          501c97ad5d82   2 hours ago         544MB
+<none>                                <none>                          e0bf4e1c42f0   3 hours ago         544MB
+yogesh/devops-integration             latest                          c9052f8a238a   3 hours ago         544MB
+<none>                                <none>                          b84fad451e95   3 hours ago         544MB
+yogesh860/docker-jenkin-integration   docker-jenkin-integration.jar   b467a5dad951   9 hours ago         488MB
+<none>                                <none>                          6576788341ac   10 hours ago        488MB
+<none>                                <none>                          34515dd85ceb   10 hours ago        488MB
+<none>                                <none>                          3f272f2ec4db   10 hours ago        488MB
+<none>                                <none>                          1c1d271c2b50   10 hours ago        488MB
+<none>                                <none>                          e2e16d321f86   10 hours ago        488MB
+<none>                                <none>                          79f72d23f461   11 hours ago        544MB
+gcr.io/k8s-minikube/kicbase           v0.0.40                         c6cc01e60919   2 months ago        1.19GB
+
+C:\Windows\System32>cd `
+The system cannot find the path specified.
+
+C:\Windows\System32>cd ~
+The system cannot find the path specified.
+
+C:\Windows\System32>C:\Users\<YourUsername>\.kube\config
+The system cannot find the file specified.
+
+C:\Windows\System32>cd C:\Users\yoges\.kube\config
+The directory name is invalid.
+
+C:\Windows\System32>cd %USERPROFILE%
+
+C:\Users\yoges>\.kube\config
+The system cannot find the path specified.
+
+C:\Users\yoges>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\yoges>list
+'list' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\yoges>dir
+ Volume in drive C is Windows11
+ Volume Serial Number is 9EFD-9F8D
+
+ Directory of C:\Users\yoges
+
+09/16/2023  07:49 PM    <DIR>          .
+08/13/2023  03:32 PM    <DIR>          ..
+09/03/2023  05:07 PM    <DIR>          .config
+09/16/2023  06:04 PM    <DIR>          .docker
+09/16/2023  08:26 AM                94 .dockercfg
+09/16/2023  08:05 AM                57 .gitconfig
+09/16/2023  02:12 AM    <DIR>          .groovy
+09/16/2023  08:27 PM    <DIR>          .jenkins
+09/16/2023  07:49 PM    <DIR>          .kube
+09/01/2023  02:41 AM    <DIR>          .m2
+09/16/2023  08:07 PM    <DIR>          .minikube
+09/01/2023  02:44 AM    <DIR>          .ms-ad
+09/05/2023  11:19 PM                90 .rediscli_history
+09/15/2023  01:17 AM    <DIR>          .sonarlint
+06/02/2023  12:10 PM    <DIR>          .sts4
+09/15/2023  12:48 AM    <DIR>          .wakatime
+09/15/2023  12:48 AM                91 .wakatime-internal.cfg
+09/15/2023  12:49 AM            32,768 .wakatime.bdb
+09/15/2023  01:16 AM    <DIR>          aiXcoder
+03/11/2023  03:46 AM    <DIR>          Contacts
+04/10/2023  06:38 PM    <DIR>          Creative Cloud Files
+04/20/2023  12:01 AM    <DIR>          Demogitusing
+06/02/2023  12:09 PM    <DIR>          Documents
+09/15/2023  12:39 PM    <DIR>          Downloads
+03/11/2023  11:41 PM    <DIR>          eclipse
+06/02/2023  11:27 AM    <DIR>          eclipse-workspace
+03/11/2023  03:46 AM    <DIR>          Favorites
+09/16/2023  11:51 AM    <DIR>          IntellijCodes
+03/11/2023  03:46 AM    <DIR>          Links
+03/11/2023  03:46 AM    <DIR>          Music
+09/15/2023  12:42 PM    <DIR>          OneDrive
+03/25/2023  09:20 AM    <DIR>          Postman
+03/11/2023  03:46 AM    <DIR>          Saved Games
+03/11/2023  03:56 AM    <DIR>          Searches
+09/04/2023  10:50 PM    <DIR>          Videos
+06/22/2023  02:29 PM    <DIR>          workspace
+               5 File(s)         33,100 bytes
+              31 Dir(s)  48,337,801,216 bytes free
+
+C:\Users\yoges>dir .kube
+ Volume in drive C is Windows11
+ Volume Serial Number is 9EFD-9F8D
+
+ Directory of C:\Users\yoges\.kube
+
+09/16/2023  07:49 PM    <DIR>          .
+09/16/2023  07:49 PM    <DIR>          ..
+09/16/2023  08:09 PM               831 config
+               1 File(s)            831 bytes
+               2 Dir(s)  48,337,276,928 bytes free
+
+C:\Users\yoges>\.kube
+'\.kube' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\yoges>.kube
+'.kube' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\yoges>cd C:\Users\yoges\.kube
+
+C:\Users\yoges\.kube>dir
+ Volume in drive C is Windows11
+ Volume Serial Number is 9EFD-9F8D
+
+ Directory of C:\Users\yoges\.kube
+
+09/16/2023  07:49 PM    <DIR>          .
+09/16/2023  07:49 PM    <DIR>          ..
+09/16/2023  08:09 PM               831 config
+               1 File(s)            831 bytes
+               2 Dir(s)  48,336,674,816 bytes free
+
+C:\Users\yoges\.kube>type C:\Users\yoges\.kube\config
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority: C:\Users\yoges\.minikube\ca.crt
+    extensions:
+    - extension:
+        last-update: Sat, 16 Sep 2023 20:09:06 IST
+        provider: minikube.sigs.k8s.io
+        version: v1.31.2
+      name: cluster_info
+    server: https://127.0.0.1:57257
+  name: minikube
+contexts:
+- context:
+    cluster: minikube
+    extensions:
+    - extension:
+        last-update: Sat, 16 Sep 2023 20:09:06 IST
+        provider: minikube.sigs.k8s.io
+        version: v1.31.2
+      name: context_info
+    namespace: default
+    user: minikube
+  name: minikube
+current-context: minikube
+kind: Config
+preferences: {}
+users:
+- name: minikube
+  user:
+    client-certificate: C:\Users\yoges\.minikube\profiles\minikube\client.crt
+    client-key: C:\Users\yoges\.minikube\profiles\minikube\client.key
+
+C:\Users\yoges\.kube>kubctl get nodes
+'kubctl' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\yoges\.kube>kubectl get nodes
+NAME       STATUS   ROLES           AGE   VERSION
+minikube   Ready    control-plane   66m   v1.27.4
+
+C:\Users\yoges\.kube>kubectl get deployements
+error: the server doesn't have a resource type "deployements"
+
+C:\Users\yoges\.kube>kubectl get deployments
+NAME                         READY   UP-TO-DATE   AVAILABLE   AGE
+spring-boot-k8s-deployment   2/2     2            2           5m57s
+
+C:\Users\yoges\.kube>kubectl get pods
+NAME                                          READY   STATUS    RESTARTS   AGE
+spring-boot-k8s-deployment-6d6c7df85f-tc8rt   1/1     Running   0          6m22s
+spring-boot-k8s-deployment-6d6c7df85f-thzjb   1/1     Running   0          6m21s
+
+C:\Users\yoges\.kube>cd %USERPROFILE%
+
+C:\Users\yoges>kubectl get loges  stage('deploy to kubernete'){            steps{                script{                   kubernetesDeploy (configs: 'deployementservice.yaml',kubeconfigId: 'kubernetepwd')        }        }        }^Z^Z
+error: the server doesn't have a resource type "loges"
+
+C:\Users\yoges>kubectl get logs spring-boot-k8s-deployment-6d6c7df85f-tc8rt
+error: the server doesn't have a resource type "logs"
+
+C:\Users\yoges>kubectl logs spring-boot-k8s-deployment-6d6c7df85f-tc8rt -c container-name
+error: container container-name is not valid for pod spring-boot-k8s-deployment-6d6c7df85f-tc8rt
+
+C:\Users\yoges>kubectl describe pod spring-boot-k8s-deployment-6d6c7df85f-tc8rt
+Name:             spring-boot-k8s-deployment-6d6c7df85f-tc8rt
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             minikube/192.168.49.2
+Start Time:       Sat, 16 Sep 2023 21:00:04 +0530
+Labels:           app=spring-boot-k8s
+                  pod-template-hash=6d6c7df85f
+Annotations:      <none>
+Status:           Running
+IP:               10.244.0.5
+IPs:
+  IP:           10.244.0.5
+Controlled By:  ReplicaSet/spring-boot-k8s-deployment-6d6c7df85f
+Containers:
+  spring-boot-k8s:
+    Container ID:   docker://69519466696e01ac9a666513e063761c018da4c2ded153783a8b3039279718b6
+    Image:          yogesh860/devops-integration
+    Image ID:       docker-pullable://yogesh860/devops-integration@sha256:60899ee7156c590cf88c6f7f3b49463a03c99eb259c012282bda12bb1eda6e98
+    Port:           8082/TCP
+    Host Port:      0/TCP
+    State:          Running
+      Started:      Sat, 16 Sep 2023 21:04:15 +0530
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-vbv7t (ro)
+Conditions:
+  Type              Status
+  Initialized       True
+  Ready             True
+  ContainersReady   True
+  PodScheduled      True
+Volumes:
+  kube-api-access-vbv7t:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    ConfigMapOptional:       <nil>
+    DownwardAPI:             true
+QoS Class:                   BestEffort
+Node-Selectors:              <none>
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type    Reason     Age    From               Message
+  ----    ------     ----   ----               -------
+  Normal  Scheduled  11m    default-scheduler  Successfully assigned default/spring-boot-k8s-deployment-6d6c7df85f-tc8rt to minikube
+  Normal  Pulling    11m    kubelet            Pulling image "yogesh860/devops-integration"
+  Normal  Pulled     7m28s  kubelet            Successfully pulled image "yogesh860/devops-integration" in 4m1.150462742s (4m1.150716844s including waiting)
+  Normal  Created    7m27s  kubelet            Created container spring-boot-k8s
+  Normal  Started    7m26s  kubelet            Started container spring-boot-k8s
+
+C:\Users\yoges>kubectl logs spring-boot-k8s-deployment-6d6c7df85f-tc8rt
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::               (v2.7.15)
+
+2023-09-16 15:34:18.715  INFO 1 --- [           main] c.d.dockerimage.DockerimageApplication   : Starting DockerimageApplication v0.0.1-SNAPSHOT using Java 1.8.0_342 on spring-boot-k8s-deployment-6d6c7df85f-tc8rt with PID 1 (/devops-integration.jar started by root in /)
+2023-09-16 15:34:18.718  INFO 1 --- [           main] c.d.dockerimage.DockerimageApplication   : No active profile set, falling back to 1 default profile: "default"
+2023-09-16 15:34:25.617  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-09-16 15:34:25.707  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-16 15:34:25.707  INFO 1 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.79]
+2023-09-16 15:34:26.311  INFO 1 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-16 15:34:26.311  INFO 1 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7435 ms
+2023-09-16 15:34:35.706  INFO 1 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-09-16 15:34:35.835  INFO 1 --- [           main] c.d.dockerimage.DockerimageApplication   : Started DockerimageApplication in 19.412 seconds (JVM running for 20.582)
+
+C:\Users\yoges>kubectl get svc
+NAME                TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
+kubernetes          ClusterIP   10.96.0.1        <none>        443/TCP          85m
+springboot-k8ssvc   NodePort    10.107.223.105   <none>        8082:31471/TCP   14m
+
+C:\Users\yoges>minikube service springboot-k8ssvc --url
+W0916 21:18:57.276342   13512 main.go:291] Unable to resolve the current Docker CLI context "default": context "default": context not found: open C:\Users\yoges\.docker\contexts\meta\37a8eec1ce19687d132fe29051dca629d164e2c4958ba141d5f4133a33f0688f\meta.json: The system cannot find the path specified.
+http://127.0.0.1:62784
+! Because you are using a Docker driver on windows, the terminal needs to be open to run it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
