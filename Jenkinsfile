@@ -42,5 +42,13 @@ pipeline {
                 }
             }
         }
+        stage('deploy to kubernete'){
+        steps{
+        script{
+        kubernetesDeploy (configs: 'deployementservice.yaml',kubeconfigId: 'kubernetepwd')
+        }
+
+        }
+        }
     }
 }
